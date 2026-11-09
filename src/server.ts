@@ -1,9 +1,22 @@
 import Fastify from "fastify"
+import cors from "@fastify/cors"
 import { userRoutes } from "./routes/user.routes.js"
 
 const app = Fastify({ logger: true })
 
 app.register(userRoutes)
+await app.register(cors, {
+  origin: true,
+  methods: [
+    "GET",
+    "POST",
+    "PUT",
+    "DELETE",
+    "PATCH",
+    "OPTIONS",
+  ],
+  credentials: true
+})
 
 const start = () => {
   try {
