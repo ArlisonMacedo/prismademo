@@ -1,5 +1,5 @@
 import Fastify from "fastify";
-import { userRoutes } from "./routes/user.routes";
+import { userRoutes } from "./routes/user.routes.js";
 const app = Fastify({ logger: true });
 app.register(userRoutes);
 const start = () => {
@@ -16,3 +16,4 @@ const start = () => {
     }
 };
 start();
+//# sourceMappingURL=server.js.map

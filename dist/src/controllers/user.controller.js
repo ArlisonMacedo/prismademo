@@ -1,4 +1,4 @@
-import { UserService } from "../services/user.service";
+import { UserService } from "../services/user.service.js";
 const userService = new UserService();
 export class UserController {
     async create(request, reply) {
@@ -11,3 +11,4 @@ export class UserController {
         return reply.send(users);
     }
 }
+//# sourceMappingURL=user.controller.js.map

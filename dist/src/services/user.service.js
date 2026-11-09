@@ -1,4 +1,4 @@
-import { prisma } from "../lib/prisma";
+import { prisma } from "../lib/prisma.js";
 export class UserService {
     async create(data) {
         const userExist = await prisma.user.findUnique({
@@ -15,3 +15,4 @@ export class UserService {
         return await prisma.user.findMany();
     }
 }
+//# sourceMappingURL=user.service.js.map

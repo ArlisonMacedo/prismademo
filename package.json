@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "tsx watch src/server.ts",
-    "build": "tsc",
-    "start": "npx prisma migrate deploy && node dist/src/server.js"
+    "build": "prisma generate && tsc",
+    "start": "node dist/src/server.js"
   },
   "keywords": [],
   "author": "",

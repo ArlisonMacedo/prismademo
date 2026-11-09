@@ -65,3 +65,4 @@ export const QueryMode = {
     default: 'default',
     insensitive: 'insensitive'
 };
+//# sourceMappingURL=prismaNamespaceBrowser.js.map

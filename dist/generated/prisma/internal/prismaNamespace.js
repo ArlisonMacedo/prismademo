@@ -94,3 +94,4 @@ export const QueryMode = {
     insensitive: 'insensitive'
 };
 export const defineExtension = runtime.Extensions.defineExtension;
+//# sourceMappingURL=prismaNamespace.js.map
